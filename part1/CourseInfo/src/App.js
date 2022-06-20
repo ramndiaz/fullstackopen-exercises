@@ -6,12 +6,17 @@ import Total from "./Total";
 const App = () => {
   const course = `Half Stack application development`;
   // intialized empty array for parts to be stored and accessed
+
   const partsArray = [];
 
   const parts = [
-    { part: "Fundamentals of React", exercise: 10, id: 1 },
-    { part: "Using props to pass data", exercise: 7, id: 2 },
-    { part: "State of a component", exercise: 14, id: 3 }
+    { part: "Fundamentals of NodeJs", exercise: 8, id: 1 },
+    { part: "Using data in Nodejs", exercise: 5, id: 2 },
+    { part: "Mongo with NodeJs", exercise: 9, id: 3 },
+    { part: "Routing with NodeJs", exercise: 6, id: 4 },
+    { part: "Redux", exercise: 9, id: 5 },
+    { part: "Mongo for beginners", exercise: 9, id: 6 },
+    { part: "NodeJs for beginners", exercise: 9, id: 7 }
   ];
   parts.filter((item) =>
     item.exercise ? partsArray.push(item.exercise) : console.log("nope")
